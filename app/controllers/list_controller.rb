@@ -21,7 +21,7 @@ class ListController < ApplicationController
     if @list.update_attributes(list_params)
       redirect_to :root
     else
-      render action: :edit
+      render :edit
     end
   end
 
